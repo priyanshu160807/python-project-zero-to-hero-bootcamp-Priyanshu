@@ -37,7 +37,7 @@ def predict():
     return render_template('index.html', prediction_text=f"Predicted Price: {output}")
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     
     port = int(os.environ.get("PORT", 5000))  # Use Render's assigned port or default to 5000
     app.run(host='0.0.0.0', port=port)
